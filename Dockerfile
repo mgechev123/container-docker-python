@@ -1,13 +1,15 @@
-# Especifica a imagem de origem
+# Especifica a imagem de origem (Python versão 3)
 FROM python:3
 
-# Instala as dependências
+# Copia o programa para a imagem
 ADD helloworld.py /
+
+# Instala na imagem as dependências necessárias para o código
 RUN pip install flask
 RUN pip install flask_restful
  
-# Expõe a porta do apache
+# Expõe a porta da aplicação
 EXPOSE 3333
  
-# Executa o apache
-CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+# Roda o programa Python
+CMD [ "python", "./helloworld.py"]
