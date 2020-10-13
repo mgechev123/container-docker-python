@@ -6,7 +6,7 @@ api = Api(app)
 
 class Greeting (Resource):
     def get(self):
-        return '<p>one paragraph<br />with a line break in the middle</p>'"""""
+        return '<p>one paragraph<br />with a line break in the middle</p>'"a""""
 
 api.add_resource(Greeting, '/') # Route_1
 
