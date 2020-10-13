@@ -4,7 +4,7 @@ FROM python:3
 # Copia o programa para a imagem
 ADD helloworld.py /
 
-# Instala na imagem as dependências necessárias para o código
+# Instala na imagem os pacotes necessários para o código
 RUN pip install flask
 RUN pip install flask_restful
  
