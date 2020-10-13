@@ -6,7 +6,7 @@ api = Api(app)
 
 class Greeting (Resource):
     def get(self):
-        return 'Hello World!\n\nImagem docker gerada a partir do arquivo Dockerfile funcionou corretamente!\n\nAtividade pratica PUC - Containers'
+        return 'Hello World!'
 
 api.add_resource(Greeting, '/') # Route_1
 
