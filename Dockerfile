@@ -1,4 +1,4 @@
-# Especifica a imagem de origem (Python versão 3)
+# Especifica a imagem de origem
 FROM python:3
 
 # Copia o programa para a imagem
