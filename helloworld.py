@@ -6,7 +6,8 @@ api = Api(app)
 
 class Greeting (Resource):
     def get(self):
-        return '<html><head><title>Meu Servidor Web</title></head><body><h1>Funcionou!</h1><h2>Esse é um servidor web em um container docker</h2></body></html>'
+        s = "Hello\nWorld"
+        print s
 
 api.add_resource(Greeting, '/') # Route_1
 
