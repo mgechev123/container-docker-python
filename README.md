@@ -59,3 +59,8 @@ Se estiver executando o container localmente, acessar diretamente o endereço lo
 <pre>
 http://localhost:3333
 </pre>
+
+7. Em qualquer um dos casos, você deverá receber a seguinte mensagem de sucesso:
+<pre>
+Hello World!     ###     Imagem docker gerada a partir do arquivo Dockerfile funcionou corretamente!     ###     Atividade pratica PUC - Containers
+</pre>
