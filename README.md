@@ -30,19 +30,19 @@ cat helloworld.py
 docker build -t "nome_imagem" -f Dockerfile .
 </pre>
 
-Listar as imagens para verificar se a nossa imagem foi criada:
+4. Listar as imagens para verificar se a nossa imagem foi criada:
 
 <pre>
 docker images
 </pre>
 
-Vamos usar o comando "run" para executar a imagem no container. A porta mapeada será a 3333:
+5. Vamos usar o comando "run" para executar a imagem no container. A porta mapeada será a 3333:
 
 <pre>
 docker run -d -p 3333:3333 "nome_imagem"
 </pre>
 
-Para testar, há algumas maneiras. 
+6. Para testar, há algumas maneiras. 
 
 Caso esteja utilizando o ambiente da Amazon, acesse o endereço IP público da máquina virtual através do seu browser, adicionando a porta ao final do endereço:
 <pre>
