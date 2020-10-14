@@ -48,6 +48,13 @@ Caso esteja utilizando o ambiente da Amazon, acesse o endereço IP público da m
 <pre>
 ec2-54-89-206-156.compute-1.amazonaws.com:3333
 </pre>
-Se estiver executando o container localmente, acessar diretamente o endereço localhost:
 
-* http://localhost
+Se quiser testar dentro do terminal mesmo, use o comando curl para verificar a mensagem de sucesso:
+<pre>
+docker curl http://localhost:3333
+</pre>
+
+Se estiver executando o container localmente, acessar diretamente o endereço localhost no seu browser:
+<pre>
+http://localhost:3333
+</pre>
