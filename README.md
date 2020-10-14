@@ -7,7 +7,7 @@ Os passos serão:
 -Criar um arquivo com o código fonte do programa Python
 -Criar um arquivo Dockerfile
 -Criar a imagem docker usando o build
--Rodar a imagem dentro de um container
+-Rodar a imagem dentro de um container usando o run
 </pre>
 
 1. Primeiro, baixar os arquivos "Dockerfile" e "helloworld.py" (que contém o código do programa) para a máquina local. Se estiver usando o terminal da VM da Amazon, podem baixar os arquivos pra lá também. Um jeito fácil de fazer isso é usar o comando "wget" para baixar o conteúdo "raw" da página aqui do github, onde se encontra o código dos arquivos e transformá-los em arquivos dentro da VM. (Também, é possível usar o Nano para criar os arquivos direto na máquina e copiar/colar o conteúdo, porém isso irá quebrar a formatação das linhas, e será preciso editá-las manualmente).
@@ -24,24 +24,30 @@ cat Dockerfile
 cat helloworld.py
 </pre>
 
-3. Agora, vamos entrar no diretório onde se encontram os arquivos e vamos criar uma imagem docker a partir do Dockerfile, usando o comando build:
+3. Agora, vamos entrar no diretório onde se encontram os arquivos e vamos criar uma imagem docker a partir do Dockerfile, usando o comando "build":
 
 <pre>
 docker build -t "nome_imagem" -f Dockerfile .
 </pre>
 
-Listar as imagens:
+Listar as imagens para verificar se a nossa imagem foi criada:
 
 <pre>
 docker images
 </pre>
 
-Executar o container:
+Vamos usar o comando "run" para executar a imagem no container. A porta mapeada será a 3333:
 
 <pre>
-docker run -t -d -p 80:80 webserver
+docker run -d -p 3333:3333 "nome_imagem"
 </pre>
 
-Para testar, se estiver executando o container localmente, acesar diretamente o endereço localhost:
+Para testar, há algumas maneiras. 
+
+Caso esteja utilizando o ambiente da Amazon, acesse o endereço IP público da máquina virtual através do seu browser, adicionando a porta ao final do endereço:
+<pre>
+ec2-54-89-206-156.compute-1.amazonaws.com:3333
+</pre>
+Se estiver executando o container localmente, acessar diretamente o endereço localhost:
 
 * http://localhost
