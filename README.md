@@ -10,7 +10,8 @@ Os passos serão:
 -Rodar a imagem dentro de um container usando o run
 </pre>
 
-1. Primeiro, baixar os arquivos "Dockerfile" e "helloworld.py" (que contém o código do programa) para a máquina local. Se estiver usando o terminal da VM da Amazon, podem baixar os arquivos pra lá também. Um jeito fácil de fazer isso é usar o comando "wget" para baixar o conteúdo "raw" da página aqui do github, onde se encontra o código dos arquivos e transformá-los em arquivos dentro da VM. (Também, é possível usar o Nano para criar os arquivos direto na máquina e copiar/colar o conteúdo, porém isso irá quebrar a formatação das linhas, e será preciso editá-las manualmente).
+1. Primeiro, baixar os arquivos "Dockerfile" e "helloworld.py" (que contém o código do programa) para a máquina local. Se estiver usando o terminal da VM da Amazon, podem baixar os arquivos pra lá também. Um jeito fácil de fazer isso é usar o comando "wget" para baixar o conteúdo "raw" da página aqui do github, onde se encontra o código dos arquivos e transformá-los em arquivos dentro da VM. 
+(Também, é possível usar o Nano para criar os arquivos direto na máquina e copiar/colar o conteúdo, porém isso irá quebrar a formatação das linhas, e será preciso editá-las manualmente).
 
 <pre>
 wget https://raw.githubusercontent.com/mgechev123/container-docker-python/main/Dockerfile
