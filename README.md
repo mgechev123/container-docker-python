@@ -43,7 +43,7 @@ docker images
 docker run -d -p 3333:3333 "nome_imagem"
 </pre>
 
-6. Para testar se a imagem com o programa rodaram como esperado, há algumas maneiras. 
+6. Para testar se a imagem com o programa rodaram como esperado, há algumas maneiras: 
 
 Caso esteja utilizando o ambiente da Amazon, acesse o endereço IP público da máquina virtual através do seu browser, adicionando a porta ao final do endereço:
 <pre>
